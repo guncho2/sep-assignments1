@@ -14,35 +14,48 @@ class Line
     end
   # People may leave the line whenever they see fit and those behind them take their place.
     def leave(person)
-      members.delete(person);
+      members.delete(person)
     end
   # People at front
     def front
-    front =  members.length -1;
+    front =  members.[0]
+
   
     end
   # People in the middle
     def middle
-      middle = members.length/2;
+      middle[members.length/2]
     end
   # People in the back
     def back
-      back = members.length;
+      back[members.length -1]
     end
   # Searching People
     def search(person)
-      for each |member|
-        if member == person;
-          member[person] + 1;
-          newPerson = person;
-        }
-      }
+      members.each do |member|
+        if member == person
+          return member
+        end
+    end
+    return nil
+end
+
+      
   
     end
   
     private
   # Counting members by the index
     def index(person)
+        count = 0;
+        members.each {
+             |members| 
+             if person == member
+                 then return count
+                 else count += 1
+                 end
+                    }
+
     end
   
   end
