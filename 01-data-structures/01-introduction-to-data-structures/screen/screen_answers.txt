@@ -1,0 +1,31 @@
+How does your data structure allow developers to access and manipulate the data?
+
+At the screen.rb is accesed through the Screen class which comes and bring the data from
+the pixel class where pixel class brings the pixel parameters 
+
+If a developer wanted to find a specific element in your data structure, how would you search for it?
+
+At the screen class structure a developer could find the witdth and height and also a matrix is preparaed to find those parameters neted (heigth) inside the width
+to find the square pixels intersection parameter
+
+Through the insertion of pixells colors parameters insert(pixels,x y)
+wecreate a matrix to to have the pixelsat the screen class
+
+Once thismatrix is ready we can search and return the pixels on the screen
+at()
+
+With the inbound() function we ask if one of those pixels are out of the 
+heigth and width parameters if not we discharge those pixels.
+
+What other real-world data can each structure represent?
+
+this type of structure couldbe used in any digital screen and also could be a start
+touse as a graphical data structure to design UI grphic and 
+interelationed with other programs to design draws graphicaldesigns 
+or even cloudbe used as a geographical map.
+
+Personally I think that adding a third dimension it could be used to design a space map
+like a sky or a maritime cart. Astronomical calculus also however is too much right now.
+
+Designing a plane or a missile trajectory? or even a three diemnsional game.
+

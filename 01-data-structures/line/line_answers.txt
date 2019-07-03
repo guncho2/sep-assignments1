@@ -1,0 +1,10 @@
+How does your data structure allow developers to access and manipulate the data?
+The data structure allwthe developers tomanipulate them through the  self.members = [] array and through the line class
+Also they cn manipulate the data accessing the search array  through the search and index functions at the .rb files where any of them could
+initiate a search ofpersons on the array as weel the join and delete methods to do it from the line of peoples.
+
+If a developer wanted to find a specific element in your data structure, how would you search for it?
+
+As I said on the previous answer through the search definition.
+What other real-world data can each structure represent?
+Any counting, sorting or search of elements like persons, merchandise, numbers or an array of objects.

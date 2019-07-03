@@ -1,0 +1,7 @@
+This design of 3 types structures asI explain in the other answers is a practice to design a small data structure to search,
+insert, count and connect different type of data like the screen is connected with the pixells and then utilize those pixells inside the screen class
+to automatizy a real screen.
+
+The same for the line class to search any type of 
+elements in this case persons, also could be used to delete, insert, search and count other objects and sub objects
+like merchandise and prices, cities and their street.
