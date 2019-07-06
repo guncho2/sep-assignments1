@@ -1,6 +1,8 @@
 # A line of people at an amusement park ride
 # There is a front to the line, as well as a back.
 # People may leave the line whenever they see fit and those behind them take their place.
+
+
 class Line
     attr_accessor :members
   
@@ -10,53 +12,54 @@ class Line
   
   # When you enter the line, you are placed at the back.
     def join(person)
-      members.push(person);
+      self.members.push(person);
     end
   # People may leave the line whenever they see fit and those behind them take their place.
     def leave(person)
-      members.delete(person)
+      
+      self.members.delete_at(index(person))
+    puts self.members
     end
   # People at front
     def front
-    front =  members.[0]
-
-  
-    end
+    # front =  members.first
+      self.members.first
+     end
   # People in the middle
     def middle
-      middle[members.length/2]
+      index = self.members.length/2
+      self.members[index]
+      
     end
   # People in the back
     def back
-      back[members.length -1]
+      
+      self.members.last
     end
+
+
   # Searching People
-    def search(person)
-      members.each do |member|
-        if member == person
-          return member
-        end
+    
+   
+  def search(person)
+
+    person_index = self.members.index(person)
+    self.members[person_index] if !person_index.nil?
+
     end
-    return nil
-end
+
+
 
       
   
-    end
   
     private
   # Counting members by the index
     def index(person)
-        count = 0;
-        members.each {
-             |members| 
-             if person == member
-                 then return count
-                 else count += 1
-                 end
-                    }
+
+      self.members.index {|p| p == person}
 
     end
-  
-  end
-  
+
+
+    end 

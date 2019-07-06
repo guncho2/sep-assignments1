@@ -42,6 +42,6 @@ class Screen
     return valid
   end
   
-  end
+  
 
 end
